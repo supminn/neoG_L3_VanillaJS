@@ -1,27 +1,24 @@
-/*
-//input
-var username = prompt("Please enter your name");
-//processing
-var welcomeMsg = "Welcome to Minon's world "+username;
-//output
-alert(welcomeMsg);
-*/
+//Reads the input or refers to the specific html tags
 var btnTranslate = document.querySelector("#btn-translate");
 var textData = document.querySelector("#txt-input");
 var outputData = document.querySelector("#txt-output");
+
+//URL to fetch the API
 var serverURL = "https://api.funtranslations.com/translate/minion.json";
 // var serverURL = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
-//console.log(btnTranslate);
 
+//Add the parameters to the URL
 function getTranslatedURL(value) {
     return serverURL + "?text=" + value;
 }
 
+//Error handling function
 function errorHandler(error) {
     console.log("error occured", error);
     alert("Something wrong with the server, try again later.");
 }
 
+//Processing - what happens when the button is clicked
 function buttonClicked() {
     console.log("clicked");
     var textValue = textData.value;
@@ -32,5 +29,5 @@ function buttonClicked() {
         .catch(errorHandler);
 }
 
-btnTranslate.addEventListener("click",buttonClicked);
-
+//Listen to the event - when the button is clicked
+btnTranslate.addEventListener("click", buttonClicked);

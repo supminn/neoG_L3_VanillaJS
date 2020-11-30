@@ -1,3 +1,12 @@
+Javascript Basics
+//input
+var username = prompt("Please enter your name");
+//processing
+var welcomeMsg = "Welcome to Minon's world "+username;
+//output
+alert(welcomeMsg);    
+    
+Different types to fetch/add data on html    
     console.log(outputData.innerText);
     console.log(outputData.innerHTML);
     console.log(outputData.textContent);

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root {
+    --primary-color:#F2C94C;
+    --text-color: black;
+}
+
+body {
+    font-family: 'Lora', serif;
+    margin: auto;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1000px;
+}
+
+p{
+    font-style: italic;
+    padding: 0rem 1rem;
+    line-height: 1.6;
+}
+
+
+.navigation {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 0.1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+    text-align: center;
+}
+
+/** flex box div **/
+.display-flex{
+    display: flex;
+    padding: 2em;
+    margin: auto;
+    justify-content: center;
+}
+.flex-items{
+    flex-shrink: 1;
+   justify-content: center;
+   flex-flow: row wrap;
+}
+
+
+/** image **/
+.img {
+    max-width: 400px;
+    max-height: 250px;
+    min-width: 100px;
+    min-height: 50px;
+    display: block;
+    margin: auto;
+}
+
+/** text boxes **/
+#txt-output, #txt-input{
+    display: block;
+    border: 1px solid  var(--text-color);
+    width: 380px;
+    height: 100px;
+    margin-top: 1rem;
+    font-family: inherit;
+    padding: 1rem;
+    font-size: large;
+    resize: none;   
+}
+
+/** Button **/
+#btn-translate{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 1em;
+    font-size: larger;
+    margin-top: 7em;
+}
+
+#btn-translate:hover{
+    border-radius: 1em;
+    border: 1px solid var(--text-color);
+}
+/** footers **/
+
+.footer {
+    background-color: var(--primary-color);
+    padding:1rem;
+    text-align: center;
+    color: var(--text-color);
+    border-top-right-radius: 1rem;
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 465px){
+    .display-flex{
+        flex-flow: column wrap;
+    }
+    #txt-output, #txt-input, #btn-translate, .flex-items{
+        margin: auto;
+    }
+    #btn-translate{
+        margin: 1rem;
+    }
+}
