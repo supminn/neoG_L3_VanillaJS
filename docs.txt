@@ -1,0 +1,10 @@
+    console.log(outputData.innerText);
+    console.log(outputData.innerHTML);
+    console.log(outputData.textContent);
+
+innerText returns: "This element has extra spacing and contains a span element."
+innerHTML returns: "   This element has extra spacing     and contains <span>a span element</span>."
+textContent returns: "   This element has extra spacing    and contains a span element."
+
+buttonClicked is a callback function - hence buttonClicked() is not being used while sending it as a parameter
+It is called as a callback function - since the function call would happen within the addEventListener()
