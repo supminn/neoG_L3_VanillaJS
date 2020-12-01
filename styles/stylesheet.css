@@ -100,7 +100,7 @@ p{
     font-size: large;
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 465px){
+@media only screen and (max-width: 1000px) and (min-width: 450px){
     .display-flex{
         flex-flow: column wrap;
     }
@@ -110,4 +110,35 @@ p{
     #btn-translate{
         margin: 1rem;
     }
+}
+
+@media only screen and (max-width: 450px) and (min-width: 200px){
+    .display-flex{
+        flex-flow: column wrap;
+    }
+    #txt-output, #txt-input, #btn-translate, .flex-items{
+        margin: auto;
+    }
+    #btn-translate{
+        margin: 1rem;
+    }
+    .img {
+        max-width: 300px;
+        max-height: 150px;
+        min-width: 10px;
+        min-height: 50px;
+        display: block;
+        margin: auto;
+    }
+    #txt-output, #txt-input{
+        display: block;
+        border: 1px solid  var(--text-color);
+        width: 200px;
+        height: 50px;
+        margin-top: 1rem;
+        font-family: inherit;
+        padding: 1rem;
+        font-size: large;
+        resize: none;   
+    }    
 }
