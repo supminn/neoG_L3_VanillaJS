@@ -22,7 +22,7 @@ function errorHandler(error) {
 function buttonClicked() {
     console.log("clicked");
     var textValue = textData.value;
-
+    outputData.innerText = "Translation in progress..."
     fetch(getTranslatedURL(textValue))
         .then(response => response.json())
         .then(json => outputData.innerText = json.contents.translated)
