@@ -3,6 +3,7 @@
 :root {
     --primary-color:#F2C94C;
     --text-color: black;
+    --grey: #666;
 }
 
 body {
@@ -79,12 +80,21 @@ p{
     border-radius: 1em;
     font-size: larger;
     margin-top: 7em;
+    outline:none;
 }
 
 #btn-translate:hover{
     border-radius: 1em;
     border: 1px solid var(--text-color);
 }
+
+#btn-translate:active {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    box-shadow: 0 5px var(--grey);
+    transform: translateY(4px);
+  }
+
 /** footers **/
 
 .footer {
